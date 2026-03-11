@@ -5,6 +5,7 @@ from ocr_module import OCRProcessor
 from extractor import InformationExtractor
 from classifier import ShopClassifier
 
+# to run use: python main.py --input_folder images --output_folder outputs
 def main():
     parser = argparse.ArgumentParser(description="Automated Shop Signboard Information Extraction System")
     parser.add_argument("--input_folder", type=str, required=True, help="Path to the folder containing shop images.")
